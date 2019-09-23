@@ -242,7 +242,7 @@ extension _ExtendCustomModelType {
                     realValue = _value
                 }
 
-                if mapper.propertyExcluded(key: Int(bitPattern: info.address))  || info.key.contains(".st") {
+                if mapper.propertyExcluded(key: Int(bitPattern: info.address)) || info.key.contains(".storage") || info.key.contains("storage_$") {
                     continue
                 }
 
